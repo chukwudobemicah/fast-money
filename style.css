@@ -13,6 +13,10 @@ html {
   overflow: hidden;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   background-color: var(--black);
   height: 100vh;
