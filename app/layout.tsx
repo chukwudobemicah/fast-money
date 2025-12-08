@@ -29,14 +29,14 @@ export default function RootLayout({
               j.async = true;
               j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
               f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-TDKVFHWG");
+            })(window, document, "script", "dataLayer", "GTM-MN2HPG4V");
           `}
         </Script>
       </head>
       <body className={inter.className}>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TDKVFHWG"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MN2HPG4V"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
