@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 
 interface AccessButtonProps {
   href?: string;
@@ -12,6 +13,15 @@ export default function AccessButton({
   text = "Get Access",
 }: AccessButtonProps) {
   const btnRef = useRef<HTMLAnchorElement>(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push(href);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [href, router]);
 
   useEffect(() => {
     const btn = btnRef.current;
