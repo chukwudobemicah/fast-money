@@ -13,7 +13,7 @@ interface HomePageData {
 // Function to fetch data (with revalidation for performance + updates)
 async function getData(): Promise<HomePageData> {
   const query = `*[_type == "homePage"][0]`;
-  const data = await client.fetch(query, {}, { next: { revalidate: 0 } });
+  const data = await client.fetch(query, {}, { next: { revalidate: 60 } });
 
   // Fallback defaults if Sanity is empty/not connected yet
   if (!data) {
