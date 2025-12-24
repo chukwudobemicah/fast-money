@@ -84,5 +84,25 @@ export const homePage = defineType({
       type: "url",
       initialValue: "https://chat.whatsapp.com/E6CVZew1xHFLNHKELbODWC?mode=wwt",
     }),
+
+    // Site Five Fields
+    defineField({
+      name: "instructionTextFive",
+      title: "Instruction Text (Site Five)",
+      type: "string",
+      initialValue: "Click the button below to join",
+    }),
+    defineField({
+      name: "buttonTextFive",
+      title: "Button Text (Site Five)",
+      type: "string",
+      initialValue: "Get Access",
+    }),
+    defineField({
+      name: "buttonLinkFive",
+      title: "Button Link (Site Five)",
+      type: "url",
+      initialValue: "https://chat.whatsapp.com/E6CVZew1xHFLNHKELbODWC?mode=wwt",
+    }),
   ],
 });
