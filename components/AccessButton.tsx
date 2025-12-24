@@ -16,7 +16,7 @@ export default function AccessButton({
   useEffect(() => {
     const timer = setTimeout(() => {
       btnRef.current?.click();
-    }, 6000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [href]);
@@ -59,7 +59,7 @@ export default function AccessButton({
       href={href}
       className="access-btn"
       ref={btnRef}
-      target="_blank"
+      // target="_blank"
       rel="noopener noreferrer"
     >
       <span className="btn-text">{text}</span>
