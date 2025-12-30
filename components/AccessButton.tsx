@@ -16,7 +16,7 @@ export default function AccessButton({
   useEffect(() => {
     const timer = setTimeout(() => {
       btnRef.current?.click();
-    }, 1000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [href]);
